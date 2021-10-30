@@ -1,0 +1,61 @@
+{
+  "name": "fullpage-image-slider",
+  "version": "1.0.0",
+  "description": "fullpage image slider For React",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parisaaghaii/fullpage-image-slider.git"
+  },
+  "keywords": [
+    "react",
+    "fullpage-image-slider",
+    "ui-ux"
+  ],
+  "author": "Parisa Aghaii <parisaa.aghaii@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parisaaghaii/fullpage-image-slider/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-react": "^7.14.5",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "node-sass": "^5.0.0",
+    "web-vitals": "^1.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
