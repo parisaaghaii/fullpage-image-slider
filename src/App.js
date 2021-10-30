@@ -1,16 +1,16 @@
 import React from "react";
 import { BoxSlider } from "./lib";
 
-import vid2 from "./assets/viedo/vid2.mp4";
-import vid3 from "./assets/viedo/vid3.mp4";
-import vid4 from "./assets/viedo/vid4.mp4";
+import vid2 from "./assets/video/vid2.mp4";
+import vid3 from "./assets/video/vid3.mp4";
+import vid4 from "./assets/video/vid4.mp4";
 import pic01 from "./assets/images/pic01.jpg";
 import pic02 from "./assets/images/pic02.jpg";
 import pic03 from "./assets/images/pic03.jpg";
 import pic04 from "./assets/images/pic04.jpg";
 import pic05 from "./assets/images/pic05.jpg";
 import logo from "./assets/images/logo.png";
-import bg from "./lib/components/bg.png";
+import bg from "./bg.png";
 import "./App.css";
 
 function App() {
@@ -63,7 +63,7 @@ function App() {
         " ه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهکه امروزه",
     },
   ];
-  const activVedio = [
+  const activVideos = [
     {
       id: 1,
       vid: vid4,
@@ -84,7 +84,7 @@ function App() {
         images={images}
         texts={texts}
         logo={logo}
-        viedos={activVedio}
+        videos={activVideos}
         imageDuration={10000}
         textDuration={20000}
       />

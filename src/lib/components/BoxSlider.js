@@ -2,7 +2,6 @@ import React from "react";
 import Images from "./images";
 import Texts from "./texts";
 import "./Design.css";
-import Viedos from "./viedos";
 
 /**
  *
@@ -13,7 +12,7 @@ import Viedos from "./viedos";
 function BoxSlider({
   images = [],
   texts = [],
-  viedos = [],
+  videos = [],
   logo = undefined,
   backgroundImage = undefined,
   imageDuration = 10000,
@@ -24,7 +23,7 @@ function BoxSlider({
       {backgroundImage && (
         <style>{`body{background-image: url(${backgroundImage})}`}</style>
       )}
-      {viedos && viedos[0] && <Viedos items={viedos} />}
+      {videos && videos[0] && <videos items={videos} />}
       {logo && <img src={logo} className="logodesign" />}
       {images && images[0] && (
         <div className="imageSlid ">
