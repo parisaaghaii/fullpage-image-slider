@@ -20,7 +20,7 @@ export default function Images({ items = [], duration = 10000}) {
     <div
       className="imageSliderFile"
       style={{
-        backgroundImage: `url(${activeImage.img})`,
+        backgroundImage: `url(${activeImage.src})`,
         backgroundSize: `contain`,
         backgroundPosition: `center center`,
         backgroundRepeat: `no-repeat`,

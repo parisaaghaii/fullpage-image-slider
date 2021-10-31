@@ -1,6 +1,7 @@
 import React from "react";
 import Images from "./images";
 import Texts from "./texts";
+import Videos from "./videos";
 import "./Design.css";
 
 /**
@@ -23,7 +24,7 @@ function BoxSlider({
       {backgroundImage && (
         <style>{`body{background-image: url(${backgroundImage})}`}</style>
       )}
-      {videos && videos[0] && <videos items={videos} />}
+      {videos && videos[0] && <Videos items={videos} />}
       {logo && <img src={logo} className="logodesign" />}
       {images && images[0] && (
         <div className="imageSlid ">

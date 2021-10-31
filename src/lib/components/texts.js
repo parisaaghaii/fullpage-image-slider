@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 /**
  *
- * @param {Array} texts [{id="1",title="matn"}]
+ * @param {Array} texts [{id="1",text="matn"}]
  * @returns
  */
 export default function Texts({ items = [], duration= 10000 }) {
@@ -27,7 +27,7 @@ export default function Texts({ items = [], duration= 10000 }) {
         animationDuration: `${duration}ms`,
       }}
     >
-      {text?.title}
+      {text?.text}
     </div>
   );
 }

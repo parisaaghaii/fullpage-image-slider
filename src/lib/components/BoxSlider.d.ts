@@ -1,22 +1,26 @@
 import * as React from "react";
- interface simplImages {
-   id: number;
-   img: File;
- }
- interface simplTexts {
-        id: number;
-        title: string;
-}
-interface simplVideos {
-  id: number;
-  vid: File;
-}
+
 export interface BoxSliderProps {
   textDuration?: Number;
   imageDuration?: Number;
-  images?: simplImages[];
-  texts?: simplTexts[];
-  videos?: simplVideos[];
+  images?: [
+    {
+      id: number;
+      src: File;
+    }
+  ];
+  texts?: [
+    {
+      id: number;
+      text: string;
+    }
+  ];
+  videos?: [
+    {
+      id: number;
+      src: File;
+    }
+  ];
   logo?: File;
   backgroundImage?: File;
   children?: React.ReactNode;

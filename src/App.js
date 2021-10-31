@@ -1,9 +1,8 @@
 import React from "react";
 import { BoxSlider } from "./lib";
 
-import vid2 from "./assets/video/vid2.mp4";
-import vid3 from "./assets/video/vid3.mp4";
-import vid4 from "./assets/video/vid4.mp4";
+import vid2 from "./vid2.mp4";
+import vid1 from "./vid1.mp4";
 import pic01 from "./assets/images/pic01.jpg";
 import pic02 from "./assets/images/pic02.jpg";
 import pic03 from "./assets/images/pic03.jpg";
@@ -17,64 +16,60 @@ function App() {
   const images = [
     {
       id: 1,
-      img: pic04,
+      src: pic04,
     },
     {
       id: 2,
-      img: pic02,
+      src: pic02,
     },
     {
       id: 3,
-      img: pic03,
+      src: pic03,
     },
     {
       id: 4,
-      img: pic01,
+      src: pic01,
     },
     {
       id: 5,
-      img: pic05,
+      src: pic05,
     },
   ];
   const texts = [
     {
       id: 1,
-      title:
+      text:
         "یکی از مباحث پژوهشی مهم امروزیکی از مباحث پژوهشی مهم امروزیکی از مباحث پژوهشی مهم امروزیکی از مباحث پژوهشی مهم امروز",
     },
     {
       id: 2,
-      title:
+      text:
         "در حوزه فناوری اطلاعات و فناوریدر حوزه فناوری اطلاعات و فناوریدر حوزه فناوری اطلاعات و فناوریدر حوزه فناوری اطلاعات و فناوریدر حوزه فناوری اطلاعات و فناوری",
     },
     {
       id: 3,
-      title:
+      text:
         " تفاده از دانش نهفتهتفاده از دانش نهفتهتفاده از دانش نهفتهتفاده از دانش نهفتهتفاده از دانش نهفتهتفاده از دانش نهفتهاستفاده از دانش نهفته",
     },
     {
       id: 4,
-      title:
+      text:
         "  دددددد ر داده هایی اسدددددد ر داده هایی اسدددددد ر داده هایی اسدددددد ر داده هایی اسدددددد ر داده هایی اسدددددد ر داده هایی اسدددددد ر داده هایی است",
     },
     {
       id: 5,
-      title:
+      text:
         " ه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهه امروزهکه امروزه",
     },
   ];
   const activVideos = [
     {
       id: 1,
-      vid: vid4,
+      src: vid1,
     },
     {
       id: 2,
-      vid: vid3,
-    },
-    {
-      id: 3,
-      vid: vid2,
+      src: vid2,
     },
   ];
   return (

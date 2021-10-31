@@ -22,7 +22,7 @@ export default function Videos({ items = [] }) {
       muted
       loop
       className="myVideo"
-      src={activVideos?.vid}
+      src={activVideos?.src}
     ></video>
   );
 }
