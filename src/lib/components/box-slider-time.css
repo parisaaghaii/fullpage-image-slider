@@ -1,0 +1,58 @@
+
+
+.box-slider-datetime {
+  position: fixed;
+  width: 23vh;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border-radius: 20px;
+  justify-content: center;
+  /* display: flex; */
+  text-align: center;
+  flex-direction: row;
+  color: #f1f1f1;
+  padding: 50px;
+  z-index: 100;
+  top: 3vh;
+  left: 1vw;
+  color: #000;
+  /* font-size: 3rem; */
+  font-weight: bold;
+  text-shadow: 0 1px 2px #fff;
+  /* font-family: tahoma, "Courier New", Courier, monospace; */
+}
+
+.box-slider-datetime-year {
+  display: flex;
+  width: 245px;
+  height: 100px;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(180, 64%, 89%, 0.678);
+  margin-top: 40px;
+  border-radius: 50px;
+  margin-left: -18px;
+  font-size: 2rem;
+  color: #009299;
+  font-family: "B-Nazanin";
+}
+.box-slider-datetime-time {
+  /* position: fixed; */
+  width: 200px;
+  background-color: hsla(180, 64%, 89%, 0.678);
+  border-radius: 80px;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin-left: -15px;
+  color: #f0f9fa;
+  padding: 50px;
+  z-index: 100;
+  padding-right: 20px;
+  padding-left: 20px;
+ color: #009299;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgb(74, 149, 235);
+  font-family: "B-Nazanin";
+}

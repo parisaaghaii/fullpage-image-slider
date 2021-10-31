@@ -12,6 +12,7 @@ import logo from "./assets/images/logo.png";
 import bg from "./bg.png";
 import "./App.css";
 
+
 function App() {
   const images = [
     {
@@ -79,9 +80,15 @@ function App() {
         images={images}
         texts={texts}
         logo={logo}
-        videos={activVideos}
+        // videos={activVideos}
         imageDuration={10000}
         textDuration={20000}
+        videoDuration={25000}
+
+
+        showDate={true}
+        showTime={true}
+        text="salam 123456 slam"
       />
     </div>
   );

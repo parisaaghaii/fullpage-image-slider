@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 
-export default function Videos({ items = [] }) {
-  const [activVideos, setActiveVideos] = useState(items[0]);
+export default function Videos({ items = [], duration = 25000 }) {
+  const [activeVideos, setActiveVideos] = useState(items[0]);
 
   const changeVideos = (c) => {
-    let activVideos = c + 1;
-    if (activVideos >= items.length) {
-      activVideos = 0;
+    let activeVideos = c + 1;
+    if (activeVideos >= items.length) {
+      activeVideos = 0;
     }
-    setActiveVideos(items[activVideos]);
-    window.setTimeout(() => changeVideos(activVideos), 25000);
+    setActiveVideos(items[activeVideos]);
+    window.setTimeout(() => changeVideos(activeVideos), duration);
   };
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function Videos({ items = [] }) {
       muted
       loop
       className="myVideo"
-      src={activVideos?.src}
+      src={activeVideos?.src}
     ></video>
   );
 }

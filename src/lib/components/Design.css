@@ -59,12 +59,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 100px);
+  height: 100vh;
 }
 .imageSliderFile {
   position: relative;
   width: 95vw;
-  height: 70vh;
+  height: 85vh;
   margin: auto;
   border-radius: 21px;
   transition: 1s;

@@ -2,6 +2,8 @@ import React from "react";
 import Images from "./images";
 import Texts from "./texts";
 import Videos from "./videos";
+import Showtime from "./time";
+
 import "./Design.css";
 
 /**
@@ -24,8 +26,10 @@ function BoxSlider({
       {backgroundImage && (
         <style>{`body{background-image: url(${backgroundImage})}`}</style>
       )}
+      <Showtime />
       {videos && videos[0] && <Videos items={videos} />}
       {logo && <img src={logo} className="logodesign" />}
+
       {images && images[0] && (
         <div className="imageSlid ">
           <Images items={images} duration={imageDuration} />

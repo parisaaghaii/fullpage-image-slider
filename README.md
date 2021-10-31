@@ -23,10 +23,10 @@ npm i fullpage-image-slider
 
 | backgroundImage | type         | description              |
 | --------------- | ------------ | ------------------------ |
-| images          | array        | [{id:1 , img: "1.jpg"}]  |
-| texts           | array        | [{id:1 , title: "text"}] |
+| images          | array        | [{id:1 , src: "1.jpg"}]  |
+| texts           | array        | [{id:1 , text: "text"}] |
 | logo            | picture path | img file                 |
-| videos          | array        | [{id:1 , img: "1.mp4"}]  |
+| videos          | array        | [{id:1 , src: "1.mp4"}]  |
 | imageDuration   | time(number) | 10000                    |
 | textDuration    | time(number) | 20000                    |
 

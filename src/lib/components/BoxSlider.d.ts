@@ -23,7 +23,7 @@ export interface BoxSliderProps {
   ];
   logo?: File;
   backgroundImage?: File;
-  children?: React.ReactNode;
+
 }
 declare const BoxSlider: React.ForwardRefExoticComponent<
   BoxSliderProps & React.RefAttributes<unknown>
