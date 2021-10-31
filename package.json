@@ -1,6 +1,6 @@
 {
   "name": "fullpage-image-slider",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "fullpage image slider For React",
   "private": false,
   "main": "dist/index.js",

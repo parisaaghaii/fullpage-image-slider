@@ -46,20 +46,20 @@ function App() {
   const images = [
     {
       id: 1,
-      img: pic1,
+      src: pic1,
     },
   ];
   const texts = [
     {
       id: 1,
-      title:
+      text:
         "some text",
     },
   ];
   const activVideos = [
     {
       id: 1,
-      vid: vid1,
+      src: vid1,
     },
   ];
     
