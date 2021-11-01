@@ -21,9 +21,17 @@ export interface BoxSliderProps {
       src: File;
     }
   ];
+  textmessage?: string;
+  dshowTime?: Boolean;
+  showDate?: Boolean;
   logo?: File;
   backgroundImage?: File;
-
+  children?: React.ReactNode;
+  timeStyle?: {};
+  dateStyle?: {};
+  footerStyle?: {};
+  textStyle?: {};
+  logoStyle?: {};
 }
 declare const BoxSlider: React.ForwardRefExoticComponent<
   BoxSliderProps & React.RefAttributes<unknown>

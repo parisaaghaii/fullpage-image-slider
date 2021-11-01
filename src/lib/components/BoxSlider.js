@@ -3,7 +3,8 @@ import Images from "./images";
 import Texts from "./texts";
 import Videos from "./videos";
 import Showtime from "./time";
-
+import Message from "./message";
+import "../fonts/BTitr.css";
 import "./Design.css";
 
 /**
@@ -20,30 +21,70 @@ function BoxSlider({
   backgroundImage = undefined,
   imageDuration = 10000,
   textDuration = 10000,
+  timeStyle = {},
+  dateStyle = {},
+  textmessage = "",
+  showTime = false,
+  showDate = false,
+  children = undefined,
+  footerStyle = {},
+  logoStyle = {},
+  textStyle = {},
+  messageboxClassName = "",
+  messageClassName = "",
+  dateTimeClassName = "",
+  logoclassName = "",
+  boxfooterclassName = "",
 }) {
   return (
-    <div className="body">
+    <div className="body-fullPage">
       {backgroundImage && (
-        <style>{`body{background-image: url(${backgroundImage})}`}</style>
+        <style>{`.body-fullPage{background-image: url(${backgroundImage})}`}</style>
       )}
-      <Showtime />
+      {textmessage && (
+        <Message
+          classNamemessage={messageClassName}
+          text={textmessage}
+          classNamemessagebox={messageboxClassName}
+        />
+      )}
+      <Showtime
+        dateStyle={dateStyle}
+        timeStyle={timeStyle}
+        showDate={showDate}
+        showTime={showTime}
+        classNametimeanddate={dateTimeClassName}
+      />
       {videos && videos[0] && <Videos items={videos} />}
-      {logo && <img src={logo} className="logodesign" />}
-
+      {logo && (
+        <img
+          src={logo}
+          className={`logodesign-fullpage ${logoclassName}`}
+          style={logoStyle}
+        />
+      )}
       {images && images[0] && (
-        <div className="imageSlid ">
+        <div className="imageSlid-fullpage ">
           <Images items={images} duration={imageDuration} />
         </div>
       )}
       {texts && texts[0] && (
-        <div className="footer">
-          <div className="footer-content">
-            <div className="textanime">
-              <Texts items={texts} duration={textDuration} />
+        <div className="footer-fullpage">
+          <div
+            className={`footer-content-fullpage ${boxfooterclassName}`}
+            style={footerStyle}
+          >
+            <div className="textanime-fullpage">
+              <Texts
+                items={texts}
+                duration={textDuration}
+                textStyle={textStyle}
+              />
             </div>
           </div>
         </div>
       )}
+      {children}
     </div>
   );
 }
