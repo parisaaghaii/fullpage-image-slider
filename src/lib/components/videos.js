@@ -21,7 +21,7 @@ export default function Videos({ items = [], duration = 25000 }) {
       autoPlay
       muted
       loop
-      className="myVideo"
+      className="myVideo-fullpage"
       src={activeVideos?.src}
     ></video>
   );
