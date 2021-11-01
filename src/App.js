@@ -10,7 +10,7 @@ import pic04 from "./assets/images/pic04.jpg";
 import pic05 from "./assets/images/pic05.jpg";
 import logo from "./assets/images/logo.png";
 import bg from "./bg.png";
-import "./App.css";
+import "./lib/components/Design.css";
 
 
 function App() {
@@ -74,7 +74,7 @@ function App() {
     },
   ];
   return (
-    <div className="page">
+    <div className="body-fullPage">
       <BoxSlider
         backgroundImage={bg}
         images={images}
@@ -84,11 +84,19 @@ function App() {
         imageDuration={10000}
         textDuration={20000}
         videoDuration={25000}
-
-
         showDate={true}
         showTime={true}
-        text="salam 123456 slam"
+        textmessage={"salam 123456 slam"}
+        // textStyle={{color: "red"}}
+        // logoStyle={{ backgroundColor: "red" }}
+        // footerStyle={{backgroundColor: "red"}}
+        // timeStyle={{color:"red"}}
+        // dateStyle={{ color: "red" }}
+        // messageClassName="some-css-change"
+        // messageboxClassName="some-css-change"
+        // dateTimeClassName="some-css-change"
+        // logoclassName="some-css-change"
+        // boxfooterclassName="some-css-change"
       />
     </div>
   );
