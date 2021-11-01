@@ -1,7 +1,4 @@
 import BoxSlider from "./components/BoxSlider";
-import "../fonts/B-NAZANIN.ttf";
-import './index.css'
+import "./fonts/index.css";
 
 export { BoxSlider };
-
-
