@@ -18,7 +18,7 @@ export default function Images({ items = [], duration = 10000}) {
 
   return (
     <div
-      className="imageSliderFile"
+      className="imageSliderFile-fullpage"
       style={{
         backgroundImage: `url(${activeImage.src})`,
         backgroundSize: `contain`,
