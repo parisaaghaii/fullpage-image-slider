@@ -89,7 +89,7 @@ function App() {
         imageDuration={10000}
         textDuration={20000}
         videoDuration={20000}
-        showDate={true}
+        showDate={false}
         showTime={true}
         logoStyle={{ backgroundColor: "red" }}
         footerStyle={{ backgroundColor: "red" }}
