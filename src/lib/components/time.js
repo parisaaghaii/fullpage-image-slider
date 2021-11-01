@@ -5,7 +5,13 @@ import "./box-slider-time.css";
 
 moment.loadPersian({ usePersianDigits: true, dialect: "persian-modern" });
 
-export default function Showtime() {
+export default function Showtime({
+  timeStyle = {},
+  dateStyle = {},
+  showDate = false,
+  showTime = false,
+  classNametimeanddate = "",
+}) {
   const [day, setDay] = useState("01");
   const [month, setMonth] = useState("01");
   const [year, setYear] = useState("1400");
@@ -14,9 +20,9 @@ export default function Showtime() {
   const changeDate = () => {
     let m = moment();
     setTime(m.format("HH:mm:ss"));
-    setDay(m.format("jDD"));
-    setMonth(m.format("jMMMM"));
-    setYear(m.format("jYYYY"));
+    setDay(m.format(" jDD dddd "));
+    setMonth(m.format(" jMMMM / "));
+    setYear(m.format(" jYYYY / "));
     window.setTimeout(() => changeDate(), 1000);
   };
 
@@ -24,20 +30,24 @@ export default function Showtime() {
     changeDate();
   }, []);
 
-  return (
-    <div className="box-slider-datetime">
-      <div className="box-slider-datetime-time">{time}</div>
-      {/* <div style={{  }}>
-        <div className="box-slider-datetime-day">{day}</div>
-        <div className="box-slider-datetime-month">{month}</div>
-        <div className="box-slider-datetime-year">{year}</div>
-      </div> */}
-
-      <div className="box-slider-datetime-year">
-        <div>{day}</div>
-        <div>{month}</div>
-        <div>{year}</div>
+  if (showTime === true || showDate === true) {
+    return (
+      <div className={`box-slider-datetime ${classNametimeanddate}`}>
+        {showTime && (
+          <div className="box-slider-datetime-time" style={timeStyle}>
+            {time}
+          </div>
+        )}
+        {showDate && (
+          <div className="box-slider-datetime-date" style={dateStyle}>
+            <div>{day}</div>
+            <div>{month}</div>
+            <div>{year}</div>
+          </div>
+        )}
       </div>
-    </div>
-  );
+    );
+  } else {
+    return null;
+  }
 }
