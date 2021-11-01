@@ -1,0 +1,19 @@
+.messagebox-fullpage {
+  position: fixed;
+  background-color: rgba(201, 197, 197, 0.7);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+.text-message-in-box {
+  font-family: "B-Nazanin", Verdana, Geneva, Tahoma, sans-serif;
+}
