@@ -33,7 +33,7 @@ npm i fullpage-image-slider
 | textDuration        | time(number) | 20000                   |
 | videoDuration       | time(number) | 25000                   |
 | showDate            | Boolean      | {true}                  |
-| TimeDate            | Boolean      | {true}                  |
+| showTime            | Boolean      | {true}                  |
 | logoStyle           | object       | {{ color: "red" }}      |
 | footerStyle         | object       | {{ color: "red" }}      |
 | textmessage         | object       | {{ color: "red" }}      |
