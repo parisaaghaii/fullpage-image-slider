@@ -1,6 +1,6 @@
 .messagebox-fullpage {
   position: fixed;
-  background-color: rgba(201, 197, 197, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   margin: auto;
   display: flex;
   justify-content: center;
@@ -16,4 +16,5 @@
 }
 .text-message-in-box {
   font-family: "B-Nazanin", Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
 }
