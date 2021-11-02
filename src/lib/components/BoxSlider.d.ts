@@ -22,7 +22,7 @@ export interface BoxSliderProps {
     }
   ];
   textmessage?: string;
-  dshowTime?: Boolean;
+  showTime?: Boolean;
   showDate?: Boolean;
   logo?: File;
   backgroundImage?: File;
